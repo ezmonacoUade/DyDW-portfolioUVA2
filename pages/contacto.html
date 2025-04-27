@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Sitio - Ezequiel Mónaco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+    <header class="bg-red-700 text-white p-4">
+      <nav class="flex justify-center space-x-6">
+        <a href="../index.html" class="hover:underline">Inicio</a>
+        <a href="avisos.html" class="hover:underline">Avisos</a>
+        <a href="sobremi.html" class="hover:underline">Sobre Mí</a>
+        <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+        <a href="contacto.html" class="hover:underline">Contacto</a>
+      </nav>
+    </header>
+    <main class="flex-grow p-6">
+      <h1 class="text-2xl font-bold mb-4">Formulario de Contacto</h1>
+      <form class="max-w-md mx-auto bg-white p-6 rounded shadow space-y-4">
+        <input
+          type="text"
+          placeholder="Nombre"
+          class="w-full border p-2 rounded"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          class="w-full border p-2 rounded"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Asunto"
+          class="w-full border p-2 rounded"
+          required
+        />
+        <textarea
+          placeholder="Mensaje"
+          class="w-full border p-2 rounded"
+          rows="5"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
+        >
+          Enviar
+        </button>
+      </form>
+    </main>
+    <footer class="bg-red-700 text-white text-center p-4 mt-8">
+      <p>© 2025 - Diseño y Desarrollo Web | Profesora: Patricia Litovicius</p>
+    </footer>
+  </body>
+</html>
