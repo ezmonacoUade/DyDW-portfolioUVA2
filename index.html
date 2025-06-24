@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Sitio - Ezequiel Mónaco</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+    <script src="js/darkmode.js"></script>
   </head>
-  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
     <header class="bg-red-700 text-white p-4">
-      <nav class="flex justify-center space-x-6">
-        <a href="index.html" class="hover:underline">Inicio</a>
-        <a href="pages/avisos.html" class="hover:underline">Avisos</a>
-        <a href="pages/sobremi.html" class="hover:underline">Sobre Mí</a>
-        <a href="pages/materias2025.html" class="hover:underline"
-          >Materias 2025</a
-        >
-        <a href="pages/contacto.html" class="hover:underline">Contacto</a>
-      </nav>
+      <div class="flex justify-between items-center">
+        <nav class="flex justify-center space-x-6 flex-1">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <a href="pages/avisos.html" class="hover:underline">Avisos</a>
+          <a href="pages/sobremi.html" class="hover:underline">Sobre Mí</a>
+          <a href="pages/materias2025.html" class="hover:underline"
+            >Materias 2025</a
+          >
+          <a href="pages/contacto.html" class="hover:underline">Contacto</a>
+        </nav>
+        <button id="darkModeToggle" class="ml-4 p-2 rounded-full hover:bg-red-600 transition-colors">
+          <span id="sunIcon" class="text-xl">☀️</span>
+          <span id="moonIcon" class="text-xl hidden">🌙</span>
+        </button>
+      </div>
     </header>
     <main class="flex-grow p-6">
       <h1 class="text-2xl font-bold mb-4">Materias Cursadas</h1>
-      <table class="min-w-full bg-white rounded shadow">
+      <table class="min-w-full bg-white dark:bg-gray-800 rounded shadow">
         <thead>
           <tr class="bg-red-500 text-white">
             <th class="py-2">Materia</th>
@@ -29,22 +41,22 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-t">
+          <tr class="border-t dark:border-gray-600">
             <td class="p-2 text-center">Programación 1</td>
             <td class="p-2 text-center">Lunes 18:30 hs</td>
             <td class="p-2 text-center">Presencial - Aula 247</td>
           </tr>
-          <tr class="border-t">
+          <tr class="border-t dark:border-gray-600">
             <td class="p-2 text-center">Diseño y Desarrollo Web</td>
             <td class="p-2 text-center">Martes 18:30 hs</td>
             <td class="p-2 text-center">VIRTUAL</td>
           </tr>
-          <tr class="border-t">
+          <tr class="border-t dark:border-gray-600">
             <td class="p-2 text-center">Sistemas Operativos</td>
             <td class="p-2 text-center">Jueves 18:30 hs</td>
             <td class="p-2 text-center">Presencial - Aula 248</td>
           </tr>
-          <tr class="border-t">
+          <tr class="border-t dark:border-gray-600">
             <td class="p-2 text-center">Sistemas de Información II</td>
             <td class="p-2 text-center">Miercoles 18:30 hs</td>
             <td class="p-2 text-center">Presencial - Aula 246</td>

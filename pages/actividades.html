@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividades - Diseño y Desarrollo Web | Ezequiel Mónaco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/darkmode.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <header class="bg-red-700 text-white p-4">
+      <div class="flex justify-between items-center">
+        <nav class="flex justify-center space-x-6 flex-1">
+          <a href="../index.html" class="hover:underline">Inicio</a>
+          <a href="avisos.html" class="hover:underline">Avisos</a>
+          <a href="sobremi.html" class="hover:underline">Sobre Mí</a>
+          <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+          <a href="contacto.html" class="hover:underline">Contacto</a>
+        </nav>
+        <button id="darkModeToggle" class="ml-4 p-2 rounded-full hover:bg-red-600 transition-colors">
+          <span id="sunIcon" class="text-xl">☀️</span>
+          <span id="moonIcon" class="text-xl hidden">🌙</span>
+        </button>
+      </div>
+    </header>
+    <main class="flex-grow p-6">
+      <h1 class="text-3xl font-bold mb-6 text-center">Actividades - Diseño y Desarrollo Web</h1>
+      <p class="text-center mb-8 text-gray-600 dark:text-gray-300">
+        Aquí puedes encontrar todas las actividades desarrolladas durante la materia Diseño y Desarrollo Web
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <!-- Proyecto Grupal -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Proyecto Grupal</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Desarrollo colaborativo de un proyecto web completo</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-proyectogrupal/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Proyecto Grupal en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Cantina Chichilo -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Cantina Chichilo</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Sitio web para cantina universitaria</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-cantina-chichilo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Cantina Chichilo en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Grid Imágenes -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Grid Imágenes</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Implementación de grid CSS para galería de imágenes</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-grid-imagenes/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Grid Imágenes en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Formato Cajas -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Formato Cajas</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Práctica con modelo de cajas CSS</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-formato-cajas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Formato Cajas en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Formato Texto -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Formato Texto</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Tipografía y estilos de texto</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-formato-texto/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Formato Texto en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Organización Cursada -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Organización Cursada</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Estructura y organización del curso</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-org-cursada/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Organización Cursada en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Información Materia -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Información Materia</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Detalles sobre la materia</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-info-materia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Información Materia en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+
+        <!-- Información Personal Act1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+          <h3 class="text-lg font-semibold mb-3 text-red-700">Información Personal</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">Primera actividad de presentación personal</p>
+          <a
+            href="https://ezmonacouade.github.io/DyDW-info-personal-act1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block w-full bg-red-600 text-white text-center py-2 px-4 rounded hover:bg-red-700 transition-colors duration-200"
+            tabindex="0"
+            aria-label="Ver Información Personal en nueva pestaña"
+          >
+            Ver Actividad
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="materias2025.html"
+          class="inline-block bg-gray-600 text-white py-2 px-6 rounded hover:bg-gray-700 transition-colors duration-200"
+          tabindex="0"
+          aria-label="Volver a Materias 2025"
+        >
+          ← Volver a Materias
+        </a>
+      </div>
+    </main>
+    <footer class="bg-red-700 text-white text-center p-4 mt-8">
+      <p>© 2025 - Diseño y Desarrollo Web | Profesora: Patricia Litovicius</p>
+    </footer>
+  </body>
+</html> 
